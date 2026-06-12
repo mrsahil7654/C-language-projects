@@ -3,9 +3,7 @@
 int main() {
     int day;
     printf("enter a day (1 -7) : ");
-    scanf("%d\n",&day);
-
-    return 0;
+    scanf("%d\n",&day);   
 
    switch (day) {
 case 1 :printf ("monday/n");

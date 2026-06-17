@@ -1,0 +1,17 @@
+#include <stdio.h>
+ void print hello world (int count);
+
+int main()
+{
+   print hello world (5);
+    return 0;
+}
+void print hello world (int count) {
+    if (count==0) {
+        return ;
+        
+    }
+    printf("hello world");
+        print hello world (count-1);
+}
+

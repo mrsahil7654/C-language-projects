@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+// Function to calculate sum, product, and average
+float calculate(int a, int b, int *sum, int *product)
+{
+    *sum = a + b;
+    *product = a * b;
+    return (a + b) / 2.0;
+}
+
+int main()
+{
+    int num1, num2;
+    int sum, product;
+    float average;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    average = calculate(num1, num2, &sum, &product);
+
+    printf("Sum = %d\n", sum);
+    printf("Product = %d\n", product);
+    printf("Average = %.2f\n", average);
+
+    return 0;
+}
